@@ -1,0 +1,17 @@
+:root {
+    /* Color palette*/
+    --color-primary: #063a5d;
+    --color-secondary: #a8dbde;
+    
+    --color-accent-orange: #ff5c00;
+    --color-accent-yellow: #feb913; 
+    --color-accent-light-yellow: #ffd150; 
+    --color-blue: #2364a0; 
+    --color-text: #333333;
+    --color-background: #ffffff;
+    --color-light: #f4f5f7; 
+    
+    /* Typography*/
+    --font-primary: 'Alexandria', sans-serif; /* Typography for Body Text */
+    --font-heading: 'Asap Condensed', sans-serif; /* Typography for Headings */
+}
