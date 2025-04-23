@@ -31,75 +31,126 @@
 
 </head>
 <body>
-    <header class="header">
-      <div class="header__logo">
-        <img src="public/assets/images/logo/app_web/logo_icon.png" alt="Livria Logo">
-        <span class="header__logo-text">LIVRIA</span>
-      </div>
-      <nav class="header__nav" aria-label="Main Navigation">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#home" class="header__nav-link active" aria-current="page" data-i18n="nav.home">Home</a></li>
-          <li class="header__nav-item"><a href="#services" class="header__nav-link" data-i18n="nav.services">Services</a></li>
-          <li class="header__nav-item"><a href="#about" class="header__nav-link" data-i18n="nav.about">About us</a></li>
-          <li class="header__nav-item"><a href="#contact" class="header__nav-link" data-i18n="nav.contact">Contact us</a></li>
-        </ul>
-      </nav>
-      <div class="header__language-selector">
-        <button class="language-btn" data-lang="en" aria-pressed="true">EN</button>
-        <button class="language-btn" data-lang="es" aria-pressed="false">ES</button>
-      </div>
-    </header>
-
-    <div class="color-bar">
-      <div class="color-bar__section color-bar__section--orange"></div>
-      <div class="color-bar__section color-bar__section--yellow"></div>
-      <div class="color-bar__section color-bar__section--light-yellow"></div>
-      <div class="color-bar__section color-bar__section--dark-blue"></div>
-      <div class="color-bar__section color-bar__section--light"></div>
-      <div class="color-bar__section color-bar__section--teal"></div>
-      <div class="color-bar__section color-bar__section--blue"></div>
+  <header class="header">
+    <div class="header__logo">
+      <img src="public/assets/images/logo/app_web/logo_icon.png" alt="Livria Logo">
+      <span class="header__logo-text">LIVRIA</span>
     </div>
+    <nav class="header__nav" aria-label="Main Navigation">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="#home" class="header__nav-link active" aria-current="page" data-i18n="nav.home">Home</a><li>
+        <li class="header__nav-item"><a href="#services" class="header__nav-link" data-i18n="nav.services">Services</a></li>
+        <li class="header__nav-item"><a href="#about" class="header__nav-link" data-i18n="nav.about">About us</a></li>
+        <li class="header__nav-item"><a href="#contact" class="header__nav-link" data-i18n="nav.contact">Contact us</a></li>
+      </ul>
+    </nav>
+    <div class="header__language-selector">
+      <button class="language-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button class="language-btn" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero__content">
-          <div class="hero__text">
-            <h1 class="hero__title" data-i18n="hero.title">Thousands of books at your fingertips</h1>
-            <p class="hero__description" data-i18n="hero.description">
-              Discover the joy of reading, connect with a vibrant literary community, 
-              and find your next favorite book all in one welcoming place.
-            </p>
-            <div class="hero__buttons">
-              <a href="#explore" class="btn btn--primary" data-i18n="hero.cta">GO TO LIVRIA</a>
-              <a href="#more" class="btn btn--text" data-i18n="hero.more">SEE MORE +</a>
-            </div>
+  <div class="color-bar">
+    <div class="color-bar__section color-bar__section--orange"></div>
+    <div class="color-bar__section color-bar__section--yellow"></div>
+    <div class="color-bar__section color-bar__section--light-yellow"></div>
+    <div class="color-bar__section color-bar__section--dark-blue"></div>
+    <div class="color-bar__section color-bar__section--light"></div>
+    <div class="color-bar__section color-bar__section--teal"></div>
+    <div class="color-bar__section color-bar__section--blue"></div>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title" data-i18n="hero.title">Thousands of books at your fingertips</h1>
+          <p class="hero__description" data-i18n="hero.description">
+            Discover the joy of reading, connect with a vibrant literary community, 
+            and find your next favorite book all in one welcoming place.
+          </p>
+          <div class="hero__buttons">
+            <a href="#explore" class="btn btn--primary" data-i18n="hero.cta">GO TO LIVRIA</a>
+            <a href="#more" class="btn btn--text" data-i18n="hero.more">SEE MORE +</a>
           </div>
-          <!-- Carousel -->
-          <div class="carousel">
-            <div class="carousel__wrapper">
-              <img src="public/assets/images/home/main-1.jpg" alt="Imagen 1" class="carousel__img active">
-              <img src="public/assets/images/home/main-2.jpg" alt="Imagen 2" class="carousel__img">
-              <img src="public/assets/images/home/main-3.jpg" alt="Imagen 3" class="carousel__img">
-              <img src="public/assets/images/home/main-4.jpg" alt="Imagen 4" class="carousel__img">
-              <img src="public/assets/images/home/main-5.jpg" alt="Imagen 5" class="carousel__img">
-              
-              <!-- Constrols -->
-              <button class="carousel__control prev" aria-label="Previous Slide">&#10094;</button>
-              <button class="carousel__control next" aria-label="Next Slide">&#10095;</button>
-            </div>
-            
-            <!-- Progress Indicator -->
-            <div class="carousel__progress">
-              <span class="line active"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </div>
-          </div>          
         </div>
-      </section>
-    </main>
+        <!-- Carousel -->
+        <div class="carousel">
+          <div class="carousel__wrapper">
+            <img src="public/assets/images/home/main-1.jpg" alt="Imagen 1" class="carousel__img active">
+            <img src="public/assets/images/home/main-2.jpg" alt="Imagen 2" class="carousel__img">
+            <img src="public/assets/images/home/main-3.jpg" alt="Imagen 3" class="carousel__img">
+            <img src="public/assets/images/home/main-4.jpg" alt="Imagen 4" class="carousel__img">
+            <img src="public/assets/images/home/main-5.jpg" alt="Imagen 5" class="carousel__img">
+            
+            <!-- Constrols -->
+            <button class="carousel__control prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="carousel__control next" aria-label="Next Slide">&#10095;</button>
+          </div>
+          
+          <!-- Progress Indicator -->
+          <div class="carousel__progress">
+            <span class="line active"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>          
+      </div>
+    </section>
+  </main>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+  <div class="services__container">
+    <h2 class="services__title" data-i18n="services.title">Our Services</h2>
+    <p class="services__description" data-i18n="services.description">
+      Discover how Livria makes reading more accessible, interactive and community-focused.
+    </p>
+    
+    <div class="services__cards">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <div class="service-card__icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <h3 class="service-card__title" data-i18n="services.card1.title">Physical & Digital Books</h3>
+        <p class="service-card__description" data-i18n="services.card1.description">
+          Access thousands of books in multiple formats. Whether you prefer printed editions or digital convenience, 
+          find your next favorite read with our extensive library.
+        </p>
+        <a href="#" class="btn btn--text service-card__link" data-i18n="services.card1.link">LEARN MORE +</a>
+      </div>
+      
+      <!-- Service 2 -->
+      <div class="service-card">
+        <div class="service-card__icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 class="service-card__title" data-i18n="services.card2.title">Reading Community</h3>
+        <p class="service-card__description" data-i18n="services.card2.description">
+          Join a vibrant literary community where you can share recommendations, discuss books, and connect with 
+          fellow readers who share your passion for literature.
+        </p>
+        <a href="#" class="btn btn--text service-card__link" data-i18n="services.card2.link">LEARN MORE +</a>
+      </div>
+      
+      <!-- Service 3 -->
+      <div class="service-card">
+        <div class="service-card__icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3 class="service-card__title" data-i18n="services.card3.title">Interactive Tools</h3>
+        <p class="service-card__description" data-i18n="services.card3.description">
+          Enhance your reading experience with our interactive tools. Track your progress, set reading goals, 
+          and improve your comprehension with our innovative features.
+        </p>
+        <a href="#" class="btn btn--text service-card__link" data-i18n="services.card3.link">LEARN MORE +</a>
+      </div>
+    </div>
+  </div>
+  </section>
 
   <link rel="preload" href="public/assets/fonts/Asap-Condensed/AsapCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="public/assets/fonts/Alexandria/Alexandria-Regular.woff2" as="font" type="font/woff2" crossorigin>
