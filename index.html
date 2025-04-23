@@ -209,6 +209,133 @@
   </div>
   </section>
 
+  <!-- CONTACT US SECTION -->
+  <section class="contact" id="contact">
+  <div class="contact__container">
+    <h2 class="contact__title" data-i18n="contact.title">CONTACT US</h2>
+    
+    <div class="contact__form-wrapper">
+      <form class="contact__form" id="contactForm">
+        <div class="contact__form-row">
+          <div class="contact__form-group">
+            <label for="fullName" class="contact__label" data-i18n="contact.fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" class="contact__input" required>
+          </div>
+          
+          <div class="contact__form-group">
+            <label for="contactReason" class="contact__label" data-i18n="contact.reason">Reason for contact</label>
+            <textarea id="contactReason" name="contactReason" class="contact__textarea" rows="4" required></textarea>
+          </div>
+        </div>
+        
+        <div class="contact__form-row">
+          <div class="contact__form-group">
+            <label for="email" class="contact__label" data-i18n="contact.email">Email</label>
+            <input type="email" id="email" name="email" class="contact__input" required>
+          </div>
+          
+          <div class="contact__form-group">
+            <label for="cvUpload" class="contact__label" data-i18n="contact.cv">If you'd like to work with us, leave your CV!</label>
+            <input type="file" id="cvUpload" name="cvUpload" class="contact__file" aria-label="Upload CV">
+            <div class="contact__file-button" data-i18n="contact.upload">Add file</div>
+          </div>
+        </div>
+        
+        <div class="contact__form-row">
+          <div class="contact__form-group">
+            <label for="phone" class="contact__label" data-i18n="contact.phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" class="contact__input">
+          </div>
+        </div>
+        
+        <div class="contact__form-row contact__form-row--consent">
+          <div class="contact__checkbox-group">
+            <input type="checkbox" id="consent" name="consent" class="contact__checkbox" required>
+            <label for="consent" class="contact__checkbox-label" data-i18n="contact.consent">I agree to share my personal information with the Bookify Livria team</label>
+          </div>
+          
+          <button type="submit" class="btn btn--submit" data-i18n="contact.submit">SEND</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </section>
+
+  <footer class="footer">
+    <div class="color-bar">
+      <div class="color-bar__section color-bar__section--orange"></div>
+      <div class="color-bar__section color-bar__section--yellow"></div>
+      <div class="color-bar__section color-bar__section--light-yellow"></div>
+      <div class="color-bar__section color-bar__section--dark-blue"></div>
+      <div class="color-bar__section color-bar__section--light"></div>
+      <div class="color-bar__section color-bar__section--teal"></div>
+      <div class="color-bar__section color-bar__section--blue"></div>
+    </div>
+  
+    <div class="footer__container">
+      <div class="footer__columns">
+        <div class="footer__column">
+          <div class="footer__logo">
+            <img src="public/assets/images/logo/app_web/logo_icon.png" alt="Livria Logo">
+            <span class="footer__logo-text">LIVRIA</span>
+          </div>
+          <p class="footer__description" data-i18n="footer.tagline">Discover the joy of reading in a vibrant literary community.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__column">
+          <h3 class="footer__heading" data-i18n="footer.navigation">Navigation</h3>
+          <ul class="footer__links">
+            <li><a href="#home" class="footer__link" data-i18n="nav.home">Home</a></li>
+            <li><a href="#services" class="footer__link" data-i18n="nav.services">Services</a></li>
+            <li><a href="#about" class="footer__link" data-i18n="nav.about">About us</a></li>
+            <li><a href="#contact" class="footer__link" data-i18n="nav.contact">Contact us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h3 class="footer__heading" data-i18n="footer.legal">Legal</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link" data-i18n="footer.terms">Terms and Conditions</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.cookies">Cookies Policy</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.complaints">Complaints Book</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h3 class="footer__heading" data-i18n="footer.support">Support</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link" data-i18n="footer.help">Help</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.faq">Frequent Questions</a></li>
+            <li><a href="#contact" class="footer__link" data-i18n="footer.contactUs">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright" data-i18n="footer.copyright">© 2025 Bookify - Livria. All rights reserved.</p>
+        <div class="footer__language-selector">
+          <button class="language-btn footer__language-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button class="language-btn footer__language-btn" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <link rel="preload" href="public/assets/fonts/Asap-Condensed/AsapCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="public/assets/fonts/Alexandria/Alexandria-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
