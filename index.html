@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookfy - Livria</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookfy - Livria</title>
 
-    <!-- META TAGS -->
-    <meta name="description" content="Livria transforms how people access books and develop reading habits with interactive tools, a vibrant community, and access to physical and digital books.">
-    <meta name="keywords" content="Livria, books, reading, community, digital books, physical books, interactive tools">
-    <meta name="author" content="Bookfy">
+  <!-- META TAGS -->
+  <meta name="description" content="Livria transforms how people access books and develop reading habits with interactive tools, a vibrant community, and access to physical and digital books.">
+  <meta name="keywords" content="Livria, books, reading, community, digital books, physical books, interactive tools">
+  <meta name="author" content="Bookfy">
 
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="Livria">
-    <meta property="og:title" content="Bookfy - Livria">
-    <meta property="og:description" content="Discover thousands of books and a vibrant literary community with Livria.">
-    <meta property="og:type" content="website">
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Livria">
+  <meta property="og:title" content="Bookfy - Livria">
+  <meta property="og:description" content="Discover thousands of books and a vibrant literary community with Livria.">
+  <meta property="og:type" content="website">
 
-    <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="public/assets/images/logo/startup/favicon.ico" sizes="32x32" />
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="public/assets/images/logo/startup/favicon.ico" sizes="32x32" />
     
-    <!-- FONT AWESOME ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- FONT AWESOME ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <!-- STYLES -->
-    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet"/> <!-- Normalize CSS -->
-    <link rel="stylesheet" href="public/assets/styles/components/fonts.css"> <!-- Font styles -->
-    <link rel="stylesheet" href="public/assets/styles/components/variables.css"> <!-- CSS Variables -->
+  <!-- STYLES -->
+  <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet"/> <!-- Normalize CSS -->
+  <link rel="stylesheet" href="public/assets/styles/components/fonts.css"> <!-- Font styles -->
+  <link rel="stylesheet" href="public/assets/styles/components/variables.css"> <!-- CSS Variables -->
+  <link rel="stylesheet" href="public/assets/styles/components/scrollbar.css"> <!-- Typography styles -->
 
-    <link rel="stylesheet" href="public/assets/styles/index.css"> <!-- Main CSS -->
-
+  <link rel="stylesheet" href="public/assets/styles/index.css"> <!-- Main CSS -->
+  
 </head>
 <body>
-  <header class="header">
-    <div class="header__logo">
-      <img src="public/assets/images/logo/app_web/logo_icon.png" alt="Livria Logo">
-      <span class="header__logo-text">LIVRIA</span>
-    </div>
-    <nav class="header__nav" aria-label="Main Navigation">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="#home" class="header__nav-link active" aria-current="page" data-i18n="nav.home">Home</a><li>
-        <li class="header__nav-item"><a href="#services" class="header__nav-link" data-i18n="nav.services">Services</a></li>
-        <li class="header__nav-item"><a href="#about" class="header__nav-link" data-i18n="nav.about">About us</a></li>
-        <li class="header__nav-item"><a href="#contact" class="header__nav-link" data-i18n="nav.contact">Contact us</a></li>
-      </ul>
-    </nav>
-    <div class="header__language-selector">
-      <button class="language-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button class="language-btn" data-lang="es" aria-pressed="false">ES</button>
-    </div>
-  </header>
+  <div class="header-wrapper">
+    <header class="header">
+      <div class="header__logo">
+        <img src="public/assets/images/logo/app_web/logo_icon.png" alt="Livria Logo">
+        <span class="header__logo-text">LIVRIA</span>
+      </div>
+    
+      <nav class="header__nav" aria-label="Main Navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#home" class="header__nav-link active" aria-current="page" data-i18n="nav.home">Inicio</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#services" class="header__nav-link" data-i18n="nav.services">Servicios</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#about" class="header__nav-link" data-i18n="nav.about">Sobre nosotros</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contact" class="header__nav-link" data-i18n="nav.contact">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <div class="header__language-selector">
+        <button class="language-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button class="language-btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </header>    
 
-  <div class="color-bar">
-    <div class="color-bar__section color-bar__section--orange"></div>
-    <div class="color-bar__section color-bar__section--yellow"></div>
-    <div class="color-bar__section color-bar__section--light-yellow"></div>
-    <div class="color-bar__section color-bar__section--dark-blue"></div>
-    <div class="color-bar__section color-bar__section--light"></div>
-    <div class="color-bar__section color-bar__section--teal"></div>
-    <div class="color-bar__section color-bar__section--blue"></div>
+    <div class="color-bar">
+      <div class="color-bar__section color-bar__section--orange"></div>
+      <div class="color-bar__section color-bar__section--yellow"></div>
+      <div class="color-bar__section color-bar__section--light-yellow"></div>
+      <div class="color-bar__section color-bar__section--dark-blue"></div>
+      <div class="color-bar__section color-bar__section--light"></div>
+      <div class="color-bar__section color-bar__section--teal"></div>
+      <div class="color-bar__section color-bar__section--blue"></div>
+    </div>
   </div>
 
   <main>
@@ -71,7 +84,7 @@
           </p>
           <div class="hero__buttons">
             <a href="#explore" class="btn btn--primary" data-i18n="hero.cta">GO TO LIVRIA</a>
-            <a href="#more" class="btn btn--text" data-i18n="hero.more">SEE MORE +</a>
+            <a href="#services" class="btn btn--text" data-i18n="hero.more">SEE MORE +</a>
           </div>
         </div>
         <!-- Carousel -->
@@ -111,44 +124,53 @@
     
     <div class="services__cards">
       <!-- Service 1 -->
-      <div class="service-card">
-        <div class="service-card__icon">
-          <i class="fas fa-book"></i>
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.card1.title">Physical & Digital Books</h3>
+          <p class="service-card__description" data-i18n="services.card1.description">
+            Access thousands of books in multiple formats. Whether you prefer printed editions or digital convenience, 
+            find your next favorite read with our extensive library.
+          </p>
+          <a href="#" class="btn btn--text service-card__link" data-i18n="services.card1.link">LEARN MORE +</a>
         </div>
-        <h3 class="service-card__title" data-i18n="services.card1.title">Physical & Digital Books</h3>
-        <p class="service-card__description" data-i18n="services.card1.description">
-          Access thousands of books in multiple formats. Whether you prefer printed editions or digital convenience, 
-          find your next favorite read with our extensive library.
-        </p>
-        <a href="#" class="btn btn--text service-card__link" data-i18n="services.card1.link">LEARN MORE +</a>
+        <img src="public/assets/images/services/books.jpg" alt="Books Image" class="service-image" />
       </div>
-      
+    
       <!-- Service 2 -->
-      <div class="service-card">
-        <div class="service-card__icon">
-          <i class="fas fa-users"></i>
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.card2.title">Reading Community</h3>
+          <p class="service-card__description" data-i18n="services.card2.description">
+            Join a vibrant literary community where you can share recommendations, discuss books, and connect with 
+            fellow readers who share your passion for literature.
+          </p>
+          <a href="#" class="btn btn--text service-card__link" data-i18n="services.card2.link">LEARN MORE +</a>
         </div>
-        <h3 class="service-card__title" data-i18n="services.card2.title">Reading Community</h3>
-        <p class="service-card__description" data-i18n="services.card2.description">
-          Join a vibrant literary community where you can share recommendations, discuss books, and connect with 
-          fellow readers who share your passion for literature.
-        </p>
-        <a href="#" class="btn btn--text service-card__link" data-i18n="services.card2.link">LEARN MORE +</a>
+        <img src="public/assets/images/services/community.jpg" alt="Community Image" class="service-image" />
       </div>
-      
+    
       <!-- Service 3 -->
-      <div class="service-card">
-        <div class="service-card__icon">
-          <i class="fas fa-tools"></i>
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i class="fas fa-bookmark"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.card3.title">Recommendations</h3>
+          <p class="service-card__description" data-i18n="services.card3.description">
+            Enhance your reading experience with our interactive tools. Receive personalized suggestions based on your tastes and discover books that truly inspire you.
+          </p>
+          <a href="#" class="btn btn--text service-card__link" data-i18n="services.card3.link">LEARN MORE +</a>
         </div>
-        <h3 class="service-card__title" data-i18n="services.card3.title">Interactive Tools</h3>
-        <p class="service-card__description" data-i18n="services.card3.description">
-          Enhance your reading experience with our interactive tools. Track your progress, set reading goals, 
-          and improve your comprehension with our innovative features.
-        </p>
-        <a href="#" class="btn btn--text service-card__link" data-i18n="services.card3.link">LEARN MORE +</a>
+        <img src="public/assets/images/services/recommendations.jpg" alt="Recommendations Image" class="service-image" />
       </div>
-    </div>
+    </div>    
+
   </div>
   </section>
 

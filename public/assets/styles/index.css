@@ -10,9 +10,20 @@ body {
   font-family: var(--font-primary);
   color: var(--color-text);
   line-height: 1.6;
+  padding-top: 80px;
 }
- 
+
 /* Header Styles */
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--color-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -34,11 +45,11 @@ body {
 
 .header__logo-text {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
   font-size: 2rem;
   margin-left: 10px;
-  letter-spacing: 5px;
+  letter-spacing: 12px;
   user-select: none;
 }
  
@@ -53,9 +64,12 @@ body {
 }
  
 .header__nav-link {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 3px;
   text-decoration: none;
   color: var(--color-blue);
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
  
@@ -144,14 +158,14 @@ body {
  
 .hero__title {
     font-family: var(--font-heading);
-    font-size: 42px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 24px;
     color: var(--color-accent-orange);
 }
  
 .hero__description {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 32px;
   max-width: 520px;
   color: var(--color-blue);
@@ -272,7 +286,13 @@ body {
   SERVICES SECTION
 */
 
-/* Services Section Styles */
+.service-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 280px;
+}
+
 .services {
   padding: 60px 0;
   background-color: var(--color-light);
@@ -311,7 +331,6 @@ body {
 .service-card {
   flex: 1;
   min-width: 280px;
-  background-color: white;
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -325,10 +344,22 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
+.service-card-wrapper:first-child .service-card {
+  background-color: var(--color-secondary);
+}
+
+.service-card-wrapper:nth-child(2) .service-card {
+  background-color: var(--color-accent-light-yellow);
+}
+
+.service-card-wrapper:nth-child(3) .service-card {
+  background-color: var(--color-primary);
+}
+
 .service-card__icon {
   margin-bottom: 20px;
   font-size: 40px;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,11 +373,16 @@ body {
 
 .service-card__title {
   font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: var(--color-accent-orange);
   text-align: center;
+}
+
+.service-card-wrapper:nth-child(3) .service-card__title {
+  color: #fff;
 }
 
 .service-card__description {
@@ -354,14 +390,39 @@ body {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: var(--color-blue);
+  color: var(--color-text);
+}
+
+.service-card-wrapper:nth-child(3) .service-card__description {
+  color: #fff;
 }
 
 .service-card__link {
-  align-self: flex-start;
+  font-size: 14px;
   font-weight: 500;
+  padding: 10px;
+  align-self: flex-start;
+  background-color: var(--color-light);
+  color: var(--color-primary);
 }
- 
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-card-wrapper:first-child .service-image {
+  object-position: bottom;
+}
+
+.service-card-wrapper .service-image:hover {
+  transform: scale(1.02);
+}
+
 /*
   ABOUT SECTION
 */
@@ -379,6 +440,7 @@ body {
 
 .about__title {
   font-family: var(--font-heading);
+  letter-spacing: 3px;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -409,7 +471,7 @@ body {
 
 .about__logo {
   margin-bottom: 20px;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .about__logo img {
@@ -427,6 +489,7 @@ body {
   line-height: 1.6;
   margin-bottom: 20px;
   color: var(--color-text);
+  text-align: justify;
 }
 
 .about__paragraph:last-child {
@@ -437,12 +500,12 @@ body {
   background-color: var(--color-primary);
   color: white;
   font-family: var(--font-heading);
+  letter-spacing: 3px;
   font-weight: 700;
   text-align: center;
   padding: 15px;
   width: 100%;
   font-size: 24px;
-  letter-spacing: 1px;
 }
 
 .about__brand-highlight {
@@ -454,18 +517,17 @@ body {
   padding: 15px;
   width: 100%;
   font-size: 24px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   margin-bottom: 20px;
 }
 
 .about__icon {
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
+  margin-bottom: 20px;
+  align-self: center;
 }
 
 .about__icon img {
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
@@ -486,6 +548,7 @@ body {
 
 .contact__title {
   font-family: var(--font-heading);
+  letter-spacing: 3px;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -682,7 +745,9 @@ body {
 
 .footer__heading {
   font-family: var(--font-heading);
-  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--color-accent-orange);
   margin-bottom: 20px;
@@ -786,8 +851,47 @@ body {
     min-width: 200px;
   }
 }
+
+/* Responsive for About Us */
+@media (max-width: 992px) {
+  .about__column--left .about__brand-tag {
+    order: 1;
+    margin-bottom: 25px;
+  }
+
+  .about__column--left .about__logo {
+    order: 2;
+  }
+
+  .about__column--left .about__text {
+    order: 3;
+  }
+
+  .about__column--right .about__brand-highlight {
+    order: 1;
+  }
+
+  .about__column--right .about__icon {
+    order: 2;
+  }
+
+  .about__column--right .about__text {
+    order: 3;
+  }
+
+  .about__column--left,
+  .about__column--right {
+    display: flex;
+    flex-direction: column;
+  }
+}
  
 @media (max-width: 768px) {
+
+  body{
+    padding-top: 180px;
+  }
+
   .header {
     flex-direction: column;
     gap: 20px;
@@ -799,6 +903,25 @@ body {
   
   .header__nav-list {
     gap: 20px;
+  }
+
+  .carousel {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel__img {
+    border-radius: 0;
+    height: auto;
+  }
+
+  .carousel__control {
+    font-size: 1.5rem;
+    padding: 4px 10px;
+  }
+
+  .carousel__progress .line {
+    max-width: 70px;
   }
 
   .service-card {
@@ -828,11 +951,15 @@ body {
  
 @media (max-width: 576px) {
   .header__nav-list {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
   }
   
+  .header__nav-link {
+    font-size: 14px;
+  }
+
   .hero__title {
     font-size: 32px;
   }
