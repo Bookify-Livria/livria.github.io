@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Asap Condensed';
+  src: url('../../fonts/Asap-Condensed/AsapCondensed-Regular.woff2') format('woff2'),
+       url('../../fonts/Asap-Condensed/AsapCondensed-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Asap Condensed';
+  src: url('../../fonts/Asap-Condensed/AsapCondensed-Bold.woff2') format('woff2'),
+       url('../../fonts/Asap-Condensed/AsapCondensed-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alexandria';
+  src: url('../../fonts/Alexandria/Alexandria-Regular.woff2') format('woff2'),
+       url('../../fonts/Alexandria/Alexandria-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alexandria';
+  src: url('../../fonts/Alexandria/Alexandria-Medium.woff2') format('woff2'),
+       url('../../fonts/Alexandria/Alexandria-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alexandria';
+  src: url('../../fonts/Alexandria/Alexandria-Bold.woff2') format('woff2'),
+       url('../../fonts/Alexandria/Alexandria-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alexandria';
+  src: url('../../fonts/Alexandria/Alexandria-Light.woff2') format('woff2'),
+       url('../../fonts/Alexandria/Alexandria-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

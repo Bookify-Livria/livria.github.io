@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookfy - Livria</title>
+
+  <!-- META TAGS -->
+  <meta name="description" content="Livria transforms how people access books and develop reading habits with interactive tools, a vibrant community, and access to physical and digital books.">
+  <meta name="keywords" content="Livria, books, reading, community, digital books, physical books, interactive tools">
+  <meta name="author" content="Bookfy">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Livria">
+  <meta property="og:title" content="Bookfy - Livria">
+  <meta property="og:description" content="Discover thousands of books and a vibrant literary community with Livria.">
+  <meta property="og:type" content="website">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="public/assets/images/logo/startup/favicon.ico" sizes="32x32" />
+    
+  <!-- FONT AWESOME ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- STYLES -->
+  <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet"/> <!-- Normalize CSS -->
+  <link rel="stylesheet" href="public/assets/styles/components/fonts.css"> <!-- Font styles -->
+  <link rel="stylesheet" href="public/assets/styles/components/variables.css"> <!-- CSS Variables -->
+  <link rel="stylesheet" href="public/assets/styles/components/scrollbar.css"> <!-- Typography styles -->
+
+  <link rel="stylesheet" href="public/assets/styles/index.css"> <!-- Main CSS -->
+  
+</head>
+<body>
+  <div class="header-wrapper">
+    <header class="header">
+      <div class="header__logo">
+        <img src="public/assets/images/logo/app_web/logo_icon.png" alt="Livria Logo">
+        <span class="header__logo-text">LIVRIA</span>
+      </div>
+    
+      <nav class="header__nav" aria-label="Main Navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#home" class="header__nav-link active" aria-current="page" data-i18n="nav.home">Inicio</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#services" class="header__nav-link" data-i18n="nav.services">Servicios</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#about" class="header__nav-link" data-i18n="nav.about">Sobre nosotros</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contact" class="header__nav-link" data-i18n="nav.contact">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <div class="header__language-selector">
+        <button class="language-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button class="language-btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </header>    
+
+    <div class="color-bar">
+      <div class="color-bar__section color-bar__section--orange"></div>
+      <div class="color-bar__section color-bar__section--yellow"></div>
+      <div class="color-bar__section color-bar__section--light-yellow"></div>
+      <div class="color-bar__section color-bar__section--dark-blue"></div>
+      <div class="color-bar__section color-bar__section--light"></div>
+      <div class="color-bar__section color-bar__section--teal"></div>
+      <div class="color-bar__section color-bar__section--blue"></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title" data-i18n="hero.title">Thousands of books at your fingertips</h1>
+          <p class="hero__description" data-i18n="hero.description">
+            Discover the joy of reading, connect with a vibrant literary community, 
+            and find your next favorite book all in one welcoming place.
+          </p>
+          <div class="hero__buttons">
+            <a href="#explore" class="btn btn--primary" data-i18n="hero.cta">GO TO LIVRIA</a>
+            <a href="#services" class="btn btn--text" data-i18n="hero.more">SEE MORE +</a>
+          </div>
+        </div>
+        <!-- Carousel -->
+        <div class="carousel">
+          <div class="carousel__wrapper">
+            <img src="public/assets/images/home/main-1.jpg" alt="Imagen 1" class="carousel__img active">
+            <img src="public/assets/images/home/main-2.jpg" alt="Imagen 2" class="carousel__img">
+            <img src="public/assets/images/home/main-3.jpg" alt="Imagen 3" class="carousel__img">
+            <img src="public/assets/images/home/main-4.jpg" alt="Imagen 4" class="carousel__img">
+            <img src="public/assets/images/home/main-5.jpg" alt="Imagen 5" class="carousel__img">
+            
+            <!-- Constrols -->
+            <button class="carousel__control prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="carousel__control next" aria-label="Next Slide">&#10095;</button>
+          </div>
+          
+          <!-- Progress Indicator -->
+          <div class="carousel__progress">
+            <span class="line active"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>          
+      </div>
+    </section>
+  </main>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+  <div class="services__container">
+    <h2 class="services__title" data-i18n="services.title">Our Services</h2>
+    <p class="services__description" data-i18n="services.description">
+      Discover how Livria makes reading more accessible, interactive and community-focused.
+    </p>
+    
+    <div class="services__cards">
+      <!-- Service 1 -->
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.card1.title">Physical & Digital Books</h3>
+          <p class="service-card__description" data-i18n="services.card1.description">
+            Access thousands of books in multiple formats. Whether you prefer printed editions or digital convenience, 
+            find your next favorite read with our extensive library.
+          </p>
+          <a href="#" class="btn btn--text service-card__link" data-i18n="services.card1.link">LEARN MORE +</a>
+        </div>
+        <img src="public/assets/images/services/books.jpg" alt="Books Image" class="service-image" />
+      </div>
+    
+      <!-- Service 2 -->
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.card2.title">Reading Community</h3>
+          <p class="service-card__description" data-i18n="services.card2.description">
+            Join a vibrant literary community where you can share recommendations, discuss books, and connect with 
+            fellow readers who share your passion for literature.
+          </p>
+          <a href="#" class="btn btn--text service-card__link" data-i18n="services.card2.link">LEARN MORE +</a>
+        </div>
+        <img src="public/assets/images/services/community.jpg" alt="Community Image" class="service-image" />
+      </div>
+    
+      <!-- Service 3 -->
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i class="fas fa-bookmark"></i>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.card3.title">Recommendations</h3>
+          <p class="service-card__description" data-i18n="services.card3.description">
+            Enhance your reading experience with our interactive tools. Receive personalized suggestions based on your tastes and discover books that truly inspire you.
+          </p>
+          <a href="#" class="btn btn--text service-card__link" data-i18n="services.card3.link">LEARN MORE +</a>
+        </div>
+        <img src="public/assets/images/services/recommendations.jpg" alt="Recommendations Image" class="service-image" />
+      </div>
+    </div>    
+
+  </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section class="about" id="about">
+  <div class="about__container">
+    <h2 class="about__title" data-i18n="about.title">ABOUT US</h2>
+    
+    <div class="about__content">
+      <!-- Left Column - Bookify Info -->
+      <div class="about__column about__column--left">
+        <div class="about__logo">
+          <img src="public/assets/images/logo/startup/logo.png" alt="Bookify Logo">
+        </div>
+        <div class="about__text">
+          <p class="about__paragraph" data-i18n="about.bookify.description">
+            Bookify is a startup led by students from the Peruvian 
+            University of Applied Sciences (UPC) dedicated to promoting 
+            reading and facilitating its access in digital environments. 
+            With the goal of bringing literature to more people, the Livria 
+            project was developed, an innovative web application that 
+            allows users to discover, purchase, and enjoy books in various 
+            formats: physical, e-books, and audiobooks.
+          </p>
+          <p class="about__paragraph" data-i18n="about.bookify.belief">
+            At Bookify, we believe that reading is fundamental to learning, 
+            culture, and the development of critical thinking. It's not just a 
+            habit, but a choice.
+          </p>
+        </div>
+        <div class="about__brand-tag">
+          <span data-i18n="about.bookify.tag">BOOKIFY</span>
+        </div>
+      </div>
+      
+      <!-- Right Column - Livria Info -->
+      <div class="about__column about__column--right">
+        <div class="about__brand-highlight">
+          <span data-i18n="about.livria.tag">LIVRIA</span>
+        </div>
+        <div class="about__text">
+          <p class="about__paragraph" data-i18n="about.livria.description">
+            Livria is a web application designed to revolutionize the way 
+            people acquire and enjoy books. Through an intuitive and 
+            accessible platform, it offers a wide selection of titles, allowing 
+            users to explore and purchase their favorite books quickly and 
+            easily. With the goal of encouraging the habit of reading and 
+            creating a community of book lovers, Livria facilitates the 
+            connection between readers and the literary world in a 
+            modern digital environment.
+          </p>
+        </div>
+        <div class="about__icon">
+          <img src="public/assets/images/logo/app_web/logo_icon.png" alt="Book Icon">
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- CONTACT US SECTION -->
+  <section class="contact" id="contact">
+  <div class="contact__container">
+    <h2 class="contact__title" data-i18n="contact.title">CONTACT US</h2>
+    
+    <div class="contact__form-wrapper">
+      <form class="contact__form" id="contactForm">
+        <div class="contact__form-row">
+          <div class="contact__form-group">
+            <label for="fullName" class="contact__label" data-i18n="contact.fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" class="contact__input" required>
+          </div>
+          
+          <div class="contact__form-group">
+            <label for="contactReason" class="contact__label" data-i18n="contact.reason">Reason for contact</label>
+            <textarea id="contactReason" name="contactReason" class="contact__textarea" rows="4" required></textarea>
+          </div>
+        </div>
+        
+        <div class="contact__form-row">
+          <div class="contact__form-group">
+            <label for="email" class="contact__label" data-i18n="contact.email">Email</label>
+            <input type="email" id="email" name="email" class="contact__input" required>
+          </div>
+          
+          <div class="contact__form-group">
+            <label for="cvUpload" class="contact__label" data-i18n="contact.cv">If you'd like to work with us, leave your CV!</label>
+            <input type="file" id="cvUpload" name="cvUpload" class="contact__file" aria-label="Upload CV">
+            <div class="contact__file-button" data-i18n="contact.upload">Add file</div>
+          </div>
+        </div>
+        
+        <div class="contact__form-row">
+          <div class="contact__form-group">
+            <label for="phone" class="contact__label" data-i18n="contact.phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" class="contact__input">
+          </div>
+        </div>
+        
+        <div class="contact__form-row contact__form-row--consent">
+          <div class="contact__checkbox-group">
+            <input type="checkbox" id="consent" name="consent" class="contact__checkbox" required>
+            <label for="consent" class="contact__checkbox-label" data-i18n="contact.consent">I agree to share my personal information with the Bookify Livria team</label>
+          </div>
+          
+          <button type="submit" class="btn btn--submit" data-i18n="contact.submit">SEND</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </section>
+
+  <footer class="footer">
+    <div class="color-bar">
+      <div class="color-bar__section color-bar__section--orange"></div>
+      <div class="color-bar__section color-bar__section--yellow"></div>
+      <div class="color-bar__section color-bar__section--light-yellow"></div>
+      <div class="color-bar__section color-bar__section--dark-blue"></div>
+      <div class="color-bar__section color-bar__section--light"></div>
+      <div class="color-bar__section color-bar__section--teal"></div>
+      <div class="color-bar__section color-bar__section--blue"></div>
+    </div>
+  
+    <div class="footer__container">
+      <div class="footer__columns">
+        <div class="footer__column">
+          <div class="footer__logo">
+            <img src="public/assets/images/logo/app_web/logo_icon.png" alt="Livria Logo">
+            <span class="footer__logo-text">LIVRIA</span>
+          </div>
+          <p class="footer__description" data-i18n="footer.tagline">Discover the joy of reading in a vibrant literary community.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__column">
+          <h3 class="footer__heading" data-i18n="footer.navigation">Navigation</h3>
+          <ul class="footer__links">
+            <li><a href="#home" class="footer__link" data-i18n="nav.home">Home</a></li>
+            <li><a href="#services" class="footer__link" data-i18n="nav.services">Services</a></li>
+            <li><a href="#about" class="footer__link" data-i18n="nav.about">About us</a></li>
+            <li><a href="#contact" class="footer__link" data-i18n="nav.contact">Contact us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h3 class="footer__heading" data-i18n="footer.legal">Legal</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link" data-i18n="footer.terms">Terms and Conditions</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.cookies">Cookies Policy</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.complaints">Complaints Book</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h3 class="footer__heading" data-i18n="footer.support">Support</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link" data-i18n="footer.help">Help</a></li>
+            <li><a href="#" class="footer__link" data-i18n="footer.faq">Frequent Questions</a></li>
+            <li><a href="#contact" class="footer__link" data-i18n="footer.contactUs">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright" data-i18n="footer.copyright">© 2025 Bookify - Livria. All rights reserved.</p>
+        <div class="footer__language-selector">
+          <button class="language-btn footer__language-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button class="language-btn footer__language-btn" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <link rel="preload" href="public/assets/fonts/Asap-Condensed/AsapCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="public/assets/fonts/Alexandria/Alexandria-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script src="public/assets/scripts/i18n.js"></script>
+  <script src="public/assets/scripts/index.js"></script>
+
+</body>
+</html>
