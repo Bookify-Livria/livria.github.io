@@ -1,0 +1,23 @@
+/* Scrollbar customization for WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: #f4f5f7; /* Light gray from secondary palette */
+  border-radius: 8px;
+}
+
+/* Thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #ff5c00; /* Orange from primary palette */
+  border-radius: 8px;
+  border: 2px solid #f4f5f7; /* Creates padding effect using track color */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #feb913; /* Amber on hover */
+}
