@@ -6,9 +6,10 @@ Bienvenido 👋 al repositorio oficial de la **Landing Page de Livria** 📚, un
 
 La Landing Page de Livria tiene como objetivo principal brindar una presentación atractiva, clara e informativa sobre los servicios que ofrece la plataforma **Bookfy - Livria**. Está diseñada para proporcionar a los usuarios una navegación fluida, accesible desde distintos dispositivos y con funcionalidades interactivas clave.
 
-```
-⭐ Livria es una aplicación web diseñada para revolucionar la manera en que las personas adquieren y disfrutan de los libros. A través de una plataforma intuitiva y accesible, ofrece una amplia selección de títulos, permitiendo a los usuarios explorar y comprar sus lecturas favoritas de forma fácil y rápida. Con el objetivo de fomentar el hábito de la lectura y crear una comunidad de amantes de los libros, Livria facilita la conexión entre los lectores y el mundo literario en un entorno digital moderno.
-```
+> ⭐ **Livria** es una aplicación web diseñada para revolucionar la manera en que las personas adquieren y disfrutan de los libros.  
+> A través de una **plataforma intuitiva y accesible**, ofrece una **amplia selección de títulos**, permitiendo a los usuarios explorar y comprar sus lecturas favoritas de forma **fácil y rápida**.  
+>   
+> Con el objetivo de **fomentar el hábito de la lectura** y crear una **comunidad de amantes de los libros**, Livria facilita la conexión entre los lectores y el mundo literario en un **entorno digital moderno**.
 
 ## ⚙️ Tecnologías Utilizadas
 
@@ -142,8 +143,6 @@ Si deseas contribuir a este proyecto:
 2. Crea una rama `feature/nueva-funcionalidad`
 3. Realiza tus cambios
 4. Abre un Pull Request hacia `develop`
-
----
 
 ## 🧾 Licencia
 
