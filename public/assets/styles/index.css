@@ -953,11 +953,11 @@ body {
   .header__nav-list {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
   }
   
   .header__nav-link {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .hero__title {
