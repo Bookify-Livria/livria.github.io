@@ -1034,6 +1034,28 @@ body {
     animation: slideInUp 0.6s ease forwards;
 }
 
+.video-switch-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.video-switch-btn {
+    padding: 1rem 2rem;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.video-switch-btn:hover {
+    background-color: #ff5c00;
+}
+
 @keyframes slideInUp {
     from {
         opacity: 0;

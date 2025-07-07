@@ -206,6 +206,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+
+  const videoButtons = document.querySelectorAll('.video-switch-btn');
+
+  videoButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const videoSrc = button.getAttribute('data-video');
+      const video = document.querySelector('.about__video');
+      const source = video.querySelector('source');
+    
+      // Cambiar fuente del video
+      source.src = videoSrc;
+      video.load();
+      video.play(); // Opcional: reproducción automática
+    });
+  });
+
   // Show/hide video button
   function showButton() {
     if (videoButton) {
